@@ -3,8 +3,8 @@ package practice.Task_1;
 public class Dog extends Pet{
     String sound;
     public Dog(){}
-    public Dog(String sound){
-        super("Rex","sheepdog");
+    public Dog(String name, String type, String sound){
+        super(name,type);
         this.sound = sound;
     }
     public String getSound() {
@@ -17,12 +17,5 @@ public class Dog extends Pet{
     public void sound() {
         System.out.println(sound);
     }
-    @Override
-    public void show() {
-        System.out.println(getName());
-    }
-    @Override
-    public void type() {
-        System.out.println(getType());
-    }
+
 }

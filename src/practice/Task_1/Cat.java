@@ -3,8 +3,8 @@ package practice.Task_1;
 public class Cat extends Pet{
     String sound;
     public Cat(){}
-    public Cat(String sound){
-        super("Vasya","siamese");
+    public Cat(String name, String type, String sound){
+        super(name,type);
         this.sound = sound;
     }
     public String getSound() {
@@ -17,12 +17,5 @@ public class Cat extends Pet{
     public void sound() {
         System.out.println(sound);
     }
-    @Override
-    public void show() {
-        System.out.println(getName());
-    }
-    @Override
-    public void type() {
-        System.out.println(getType());
-    }
+
 }
